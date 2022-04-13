@@ -5,6 +5,7 @@
 html, body{
     height: 100%;
 }
+
 body{
     height:100%;
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/1e/Tecam_P2006t.jpg);
@@ -13,6 +14,7 @@ body{
     background-position: center;
     background-attachment: fixed;
 }
+
 header{
     height: 100%;
     text-align: center;
