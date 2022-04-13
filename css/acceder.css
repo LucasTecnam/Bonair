@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+}
+body{
+    height:100%;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/1e/Tecam_P2006t.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+header{
+    height: 100%;
+    text-align: center;
+    font-size: 6rem;  
+    float: left;  
+    color: #d7dddf;  
+}
+h6{
+    font-size: 15px;
+    color: #d7dddf;
+}
+.pag01{
+    height: 100%;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+}
+.pag02{
+    height: 110%;
+    background-image: url(https://www.deltaaviation.com/wp-content/uploads/2020/02/N294CM-1.jpeg);  
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-attachment: scroll;    
+}
+
+div#acceso{
+    margin: 20px 130px;
+    width: auto;
+    padding: 30px;
+    background-color: rgba(0,0,0, .5);
+    border-radius: 500px;
+    float: left;
+}
+div#crearcuenta{
+    margin: 370px 130px;
+    height: auto;
+    width: 450px;
+    padding: 30px;
+    background-color: rgba(0,0,0, .5);
+    border-radius: 500px;
+    float: right;
+}
+div#info{
+    margin: 100px;
+    height: auto;
+    width: 450px;
+    padding: 30px;
+    background-color: rgba(0,0,0, .5);
+    border-radius: 15px;
+    float: left;
+}
+.contenedor{
+    margin: 50px auto;
+    width: 500px;
+    padding: 30px;
+    background-color: rgba(0,0,0, .5);
+    border-radius: 15px;
+}
+.contenedor h2{
+    margin: 0 0 30px;
+    padding: 0;
+    font-size: 40px;
+    color: #d7dddf;
+    text-align: center;
+}
+.contenedor h3{
+    margin: 0 0 30px;
+    padding: 0;
+    font-size: 15px;
+    color: #d7dddf;
+    text-align: center;
+}
+.contenedor .elemento label{
+    color: #d7dddf;
+}
+.contenedor .elemento input{
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 10px;
+    color: white;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid whitesmoke;
+    border-top:  1px solid whitesmoke;
+    border-right:  1px solid whitesmoke;
+    border-left:  1px solid whitesmoke;
+    margin: 3px;
+}
+.contenedor .elemento input[type="submit"]{
+    background-color: #646262;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 15px;
+    margin-top: 10px;
+}
