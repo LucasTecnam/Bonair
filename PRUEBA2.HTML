@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/PRUEBA2.CSS" rel="stylesheet"/>
+    <link href="/css/acceder.css" rel="stylesheet"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+    <title>BONAIR</title>
+</head>
+<div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <h5 class="text-white h4">BONAIR</h5>
+      <h6 class="text-muted">EL DESTINO QUE USTED DESEE EN EL MOMENTO QUE LO REQUIERA</h6></br>
+      <nav>
+        <a href="#" id="indice">Quienes Somos</a>
+        <a href="#" id="indice">Nuestra Flota</a>
+        <a href="#" id="indice">Solicitar Vuelo</a>
+    </nav>
+    </div>
+</div>
+    
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+<body>    
+    
+
+
+    <section id="hero">
+        <video muted autoplay loop>
+            <source src="P2006T one minute video (1).mp4" type="video/mp4">
+        </video> 
+        <div class="capa"></div>
+    </section>
+
+
+
+    <section id="sobre-nosotros">
+        <div class="container">
+        <div class="img-container"></div>
+        <h2>Sobre <span class="color-acento">Nosotros</span></h2>
+        <p>BONAIR ES UNA EMPRESA DE AVIACION EJECUTIVA DISEÑADA PARA BRINDAR UN SERVICIO UNICO.</br>DISPONIBILIDAD CONTINUA, NO IMPORTA QUE DIA Y HORARIO NOS REQUIERAS. AHI ESTAREMOS!</br>NOS ENFOCAMOS EN CADA DETALLE PARA GARANTIZARLE SU MEJOR EXPERIENCIA.</p>
+    </div>
+    </section>
+
+
+
+    <section id="nuestra-flota">
+        <div class="container">
+            <h2>Nuestra Aeronave</h2>
+        <div class="carta">
+            <h3>TECNAM P2006</h3>
+                <p>LIGHT TWIN</br>ORIGEN ITALIANO</br>MODELO 2022</br>POTENCIA 200HP</br>VELOCIDAD MAXIMA 269 KM/H</br>MAXIMO RANGO 1204KM</br>CARGA MAXIMA 411KG</br>CONFIGURACION PREMIUM PARA SU MAYOR CONFORT</br> MAXIMO 3 PASAJEROS</p>
+        </div>
+        </div>  
+    </section>
+
+
+    <section id="planifica-tu-vuelo">
+        <div data-aos="zoom-in-down" class="container">
+            <h2>Planifique su vuelo!</h2>
+            <form id="forma" name="forma" method="post">
+                    <div class="elemento">
+                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary" for="btnradio1">SOLO IDA</label>                      
+                      
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio2">IDA Y VUELTA</label>
+                      
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio3">MULTI LEG</label>
+                      </div>
+                      <div class="elemento">
+                        <label for="origen">Origen</label>
+                        <input type="texto" id="Origen" name="origen" required="true" />
+                    </div>
+                    <div class="elemento">
+                        <label for="Destino">Destino</label>
+                        <input type="texto" id="Destino" name="Destino" required="true" />
+                    </div>
+                    <div class="elemento">
+                        <label for="calendario">Dia y horario</label>
+                        <input type="datetime-local" id="calendario" name="calendario" required="true" />
+                    </div>              
+                    
+                    <div class="elemento">
+                        <label for="Paxs">Cantidad de pasajeros</label>
+                        <div class="elemento">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" name="genero" type="radio" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">1</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" name="genero" type="radio" id="inlineCheckbox1" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox1">2</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" name="genero" type="radio" id="inlineCheckbox1" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox1">3</label>
+                              </div>
+                              <div class="elemento">
+                                <label for="usuario">Nombre y Apellido</label>
+                                <input type="usuario" id="usuario" name="usuario" required="true"/>
+                            </div>
+                            <div class="elemento">
+                                <label for="Telefono">Telefono</label>
+                                <input type="password" id="Telefono" name="Telefono" required="true"/>
+                            </div>
+                            <div class="elemento">
+                                <label for="Correo Electronico">Correo Electronico</label>
+                                <input type="contraseña" id="Correo Electronico" name="Correo Electronico" required="true"/>
+                            </div>
+                            <div class="elemento">
+                                <input type="submit" value="Enviar"/>
+                            </div>
+                            </div>                
+                    </div>
+                </form>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; Bonair 2022</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
