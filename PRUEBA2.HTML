@@ -16,9 +16,9 @@
       <h5 class="text-white h4">BONAIR</h5>
       <h6 class="text-muted">EL DESTINO QUE USTED DESEE EN EL MOMENTO QUE LO REQUIERA</h6></br>
       <nav>
-        <a href="#" id="indice">Quienes Somos</a>
-        <a href="#" id="indice">Nuestra Flota</a>
-        <a href="#" id="indice">Solicitar Vuelo</a>
+        <a href="#sobre-nosotros" id="indice">QUIENES SOMOS</a>
+        <a href="#nuestra-flota" id="indice">NUESTRA FLOTA</a>
+        <a href="#planifica-tu-vuelo" id="indice">SOLICITAR VUELO</a>
     </nav>
     </div>
 </div>
@@ -44,34 +44,31 @@
 
 
     <section id="sobre-nosotros">
-        <div class="container">
-        <div class="img-container"></div>
+        <div class="img-container" data-aos="zoom-in-left" id="sn">
         <h2>Sobre <span class="color-acento">Nosotros</span></h2>
-        <p>BONAIR ES UNA EMPRESA DE AVIACION EJECUTIVA DISEÑADA PARA BRINDAR UN SERVICIO UNICO.</br>DISPONIBILIDAD CONTINUA, NO IMPORTA QUE DIA Y HORARIO NOS REQUIERAS. AHI ESTAREMOS!</br>NOS ENFOCAMOS EN CADA DETALLE PARA GARANTIZARLE SU MEJOR EXPERIENCIA.</p>
+        <p>BONAIR ES UNA EMPRESA DE AVIACION EJECUTIVA DISEÑADA PARA BRINDAR UN SERVICIO UNICO.</br>DISPONIBILIDAD CONTINUA, NO IMPORTA QUE DIA Y HORARIO NOS NECESITES. AHI ESTAREMOS!</br>NOS ENFOCAMOS EN CADA DETALLE PARA GARANTIZARLE SU MEJOR EXPERIENCIA.</p>
     </div>
     </section>
 
 
 
     <section id="nuestra-flota">
-        <div class="container">
-            <h2>Nuestra Aeronave</h2>
-        <div class="carta">
+        <div class="img-container" data-aos="zoom-in-right" id="nf">
+            <h2>Nuestra <span class="color-acento">Aeronave</span></h2>
             <h3>TECNAM P2006</h3>
                 <p>LIGHT TWIN</br>ORIGEN ITALIANO</br>MODELO 2022</br>POTENCIA 200HP</br>VELOCIDAD MAXIMA 269 KM/H</br>MAXIMO RANGO 1204KM</br>CARGA MAXIMA 411KG</br>CONFIGURACION PREMIUM PARA SU MAYOR CONFORT</br> MAXIMO 3 PASAJEROS</p>
-        </div>
-        </div>  
-    </section>
-
+        </div> 
+        </section>
 
     <section id="planifica-tu-vuelo">
-        <div data-aos="zoom-in-down" class="container">
+        <div class="contenedor" data-aos="zoom-in-right" id="ptv">
             <h2>Planifique su vuelo!</h2>
             <form id="forma" name="forma" method="post">
                     <div class="elemento">
                     <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
                         <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                        <label class="btn btn-outline-primary" for="btnradio1">SOLO IDA</label>                      
+                        <label class="btn btn-outline-primary" for="btnradio1">SOLO IDA</label> 
+                                             
                       
                         <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
                         <label class="btn btn-outline-primary" for="btnradio2">IDA Y VUELTA</label>
@@ -90,8 +87,7 @@
                     <div class="elemento">
                         <label for="calendario">Dia y horario</label>
                         <input type="datetime-local" id="calendario" name="calendario" required="true" />
-                    </div>              
-                    
+                    </div>                        
                     <div class="elemento">
                         <label for="Paxs">Cantidad de pasajeros</label>
                         <div class="elemento">
