@@ -33,7 +33,7 @@ function showDiv() {
 const li        =document.querySelectorAll('.li')
 const bloque    =document.querySelectorAll('.bloque')
 
-li.forEach( (cadaLi,i)=>{
+/*li.forEach( (cadaLi,i)=>{
     li[i].addEventListener('click', ()=>{
         li.forEach( (cadaLi, i)=>{
             li[i].classList.remove('activo')
@@ -42,4 +42,17 @@ li.forEach( (cadaLi,i)=>{
             li[i].classList.add('activo')
             bloque[i].classList.add('activo')
         })
-    })
+    })*/
+
+function showDiv() {  
+if (document.getElementById('leg4').style.display == 'none') {
+leg4.style.display = 'contents';
+}
+else if (document.getElementById('leg5').style.display == 'none'){
+leg5.style.display = 'contents';  
+}
+else {
+leg6.style.display = 'contents';  
+}
+}
+    
