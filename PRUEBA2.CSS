@@ -38,7 +38,6 @@ ul{
     align-items: center;    
 }
 li{
-    letter-spacing: 3px;
     text-transform: uppercase;
     cursor: pointer;
     padding: 1vh;
