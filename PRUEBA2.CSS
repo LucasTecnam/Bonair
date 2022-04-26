@@ -31,11 +31,7 @@ header{
     )
 }
 ul{
-    width: auto;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: center;    
 }
 li{
     text-transform: uppercase;
@@ -49,14 +45,14 @@ li{
 #indice{
 	color: #FFF;
 	transition: all 0.3s;
-	position: relative;
+	position: flex;
     text-decoration: none;
-    padding: 5px;
+    padding: .4vw;
     border-radius: 5px;
     align-items: center;
     justify-content: center;
     text-align: center;    
-    border-left: 1px solid #646262;
+    border-left: 1.2px solid #646262;
     border-right: 1px solid #646262;
     border-bottom: 1px solid #646262;
     border-top: 1px solid #646262;
