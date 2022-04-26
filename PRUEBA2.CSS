@@ -234,30 +234,8 @@ h3{
     color: #d7dddf;
     text-align: center;
 }
-.contenedor .elemento label{
-    color: #d7dddf;
-}
-.contenedor .elemento input{
-    width: 100%;
-    padding: 10px 0;
-    border-radius: 10px;
-    color: white;
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid whitesmoke;
-    border-top:  1px solid whitesmoke;
-    border-right:  1px solid whitesmoke;
-    border-left:  1px solid whitesmoke;
-    margin: 3px;
-}
-.contenedor .elemento input[type="submit"]{
-    background-color: #646262;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    cursor: pointer;
-    padding: 15px;
-    margin-top: 10px;
-}
+
+
 #button-up{
     width:60px;
     height: 60px;
@@ -279,23 +257,23 @@ h3{
 }
 #button-up:hover{
     transform: scale(1.1);
-    border-color: rgba (0,0,0,0,.1);
+    border-color: rgba (0,0,0,0, 0.1);
 }
 
-.tabs {
+.tabs{
     display: flex;
     flex-wrap: wrap;
     max-width: 400px;
-    font-family: sans-serif;
     left:.3vh;
     margin: 2vh;
     height: auto;
     width: 60vh;
     padding: 10px;
-    background-color: rgba(0,0,0, .2);
+    background-color: rgba(0,0,0, .5);
     border-radius: 30px;
     font-size: 2vh;    
-    letter-spacing: 2px;
+    letter-spacing: 2.5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
   .tabs__label{
 	color: #FFF;
@@ -346,8 +324,8 @@ h3{
   .elemento{
       color: whitesmoke;
       font-weight: bold;
-      font-size: 2vh;    
-      letter-spacing: .5vh;
+      font-size: 2.5vh;   
+      letter-spacing: 1px; 
   }
   input{
     width: 100%;
