@@ -11,8 +11,8 @@ h3{font-size: 2em;}
 h6{
     text-align: center;
     font-size: 1vh;
-    border-top-width: 1px;
-	border-bottom-width: 1px;
+    border-top-width: 1vh;
+	border-bottom-width: 1vw;
 	border-top-style: solid;
 	border-top-color: rgba(255,255,255,1.5);
 }
@@ -22,7 +22,8 @@ header{
     padding: 1em;
     letter-spacing: 3px;
     text-transform: uppercase;
-    height: 20vh;
+    height: auto;
+    width: 100%;
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.3),
@@ -34,18 +35,17 @@ ul{
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
-    align-items: center;
+    align-items: center;    
 }
 li{
-    padding: 1em;
-    margin:0 2em 0 0;
     letter-spacing: 3px;
     text-transform: uppercase;
     cursor: pointer;
-    padding: 15px;
-    margin-top: 10px;
+    padding: 1vh;
+    margin-top: 1%;
     border-radius: 30px;    
-    transition: all .5s ease;
+    transition: all .5s ease;       
+    list-style: none;
 }
 #indice{
 	color: #FFF;
@@ -56,14 +56,18 @@ li{
     border-radius: 5px;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: center;    
+    border-left: 1px solid #646262;
+    border-right: 1px solid #646262;
+    border-bottom: 1px solid #646262;
+    border-top: 1px solid #646262;
 }
 #indice span {
 	transition: all 0.3s;
 }
 #indice::before {
 	content: '';
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	left: 0;
 	width: 100%;
@@ -379,6 +383,5 @@ h3{
   }
   
   .tabs__radio:checked + .tabs__label + .tabs__content {
-    display: initial;
-    
+    display: initial;    
   }
