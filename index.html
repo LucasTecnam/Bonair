@@ -61,7 +61,7 @@
             <input type="radio" class="tabs__radio" name="tabs-example" id="tab1" checked>
             <label for="tab1" class="tabs__label">SOLO IDA</label>
             <div class="tabs__content">
-                <form name="formulario-solo-ida" netlify> 
+                <form name="formulario-solo-ida" action="/action_page.php" netlify> 
                 <div class="elemento">
                     <label for="Origen">Origen</label>
                     <input type="texto" id="Origen" name="Origen" required="true"/>
@@ -71,8 +71,8 @@
                     <input type="texto" id="Destino" name="Destino" required="true"/>
                 </div>
                 <div class="elemento">
-                    <label for="calendario">Dia y horario</label>
-                    <input type="datetime-local" id="calendario" name="calendario" required="true"/>
+                    <label for="start">Dia y horario:</label><br>
+                    <input type="datetime-local" name="start" id="start" />
                 </div>                        
                 <div class="elemento">
                     <label for="Paxs">Cantidad de pasajeros</label>
@@ -127,9 +127,9 @@
                     <input type="time" id="tiempoespera" name="tiempoespera" required="true" />
                 </div>
                 <div class="elemento">
-                    <label for="calendario1">Dia y horario</label>
-                    <input type="datetime-local" id="calendario1" name="calendario1" required="true" />
-                </div>                        
+                    <label for="start1">Dia y horario:</label><br>
+                    <input type="datetime-local" name="start1" id="start1"/>
+                </div>                       
                 <div class="elemento">
                     <label for="Paxs">Cantidad de pasajeros</label>
                     <div class="elemento">
@@ -186,9 +186,9 @@
                                          <input type="time" id="tiempoespera2" name="tiempoespera2" required="true" />
                                      </div>
                                      <div class="elemento">
-                                         <label for="calendario2">Dia y horario</label>
-                                         <input type="datetime-local" id="calendario2" name="calendario2" required="true" />
-                                     </div>                        
+                                        <label for="start2">Dia y horario:</label><br>
+                                        <input type="datetime-local" name="start2" id="start2"/>
+                                    </div>                       
                                      <div class="elemento">
                                          <label for="Paxs">Cantidad de pasajeros</label>
                                          <div class="elemento">

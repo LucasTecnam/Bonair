@@ -48,3 +48,14 @@ leg6.style.display = 'contents';
 }
 
 var tilde = "Detectamos un error. </br> Por favor revise su formulario."
+
+
+
+let start = document.getElementById('start');
+start.min = (new Date()).toISOString().substr(0, 19);
+
+let start1 = document.getElementById('start1');
+start1.min = (new Date()).toISOString().substr(0, 19);
+
+let start2 = document.getElementById('start2');
+start2.min = (new Date()).toISOString().substr(0, 19);
