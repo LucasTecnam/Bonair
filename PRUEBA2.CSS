@@ -45,7 +45,7 @@ li{
 #indice{
 	color: #FFF;
 	transition: all 0.3s;
-	position: flex;
+	position: relative;
     text-decoration: none;
     padding: .4vw;
     border-radius: 5px;
@@ -262,12 +262,11 @@ h3{
 .tabs{
     display: flex;
     flex-wrap: wrap;
-    max-width: 400px;
     left:.3vh;
     margin: 2vh;
     height: auto;
-    width: 60vh;
-    padding: 10px;
+    width: 40%;
+    padding: 1.5em;
     background-color: rgba(0,0,0, .4);
     border-radius: 30px;
     font-size: 2vh;    
@@ -279,7 +278,7 @@ h3{
 	transition: all 0.3s;
 	position: relative;
     text-decoration: none;
-    padding: 5%;
+    padding: 1.5em;
     border-radius: 50px;
     align-items: center;
     justify-content: center;
