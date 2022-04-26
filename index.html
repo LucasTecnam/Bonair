@@ -56,8 +56,8 @@
         </section>      
         
     <section id="planifica-tu-vuelo">
-        <form name="formulario-vuelo" netlify>
         <div class="tabs">
+            <form name="formulario-vuelo" netlify>
             <input type="radio" class="tabs__radio" name="tabs-example" id="tab1" checked>
             <label for="tab1" class="tabs__label">SOLO IDA</label>
             <div class="tabs__content">
@@ -103,10 +103,11 @@
                         </div></br>
                         <div class="elemento">
                             <h6 id="titulo"></h6>
-                            <input type="submit" id="boton"  onclick="document.getElementById('titulo').innerHTML= tilde" value="ENVIAR"/>
+                            <input type="submit" id="boton" onclick="document.getElementById('titulo').innerHTML= tilde" value="ENVIAR"/>
                         </div>
                         </div>                
-                </div>                         
+                </div> 
+            </form>                        
             <input type="radio" class="tabs__radio" name="tabs-example" id="tab2">
             <label for="tab2" class="tabs__label">IDA Y VUELTA</label>
             <div class="tabs__content">
