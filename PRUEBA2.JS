@@ -47,4 +47,4 @@ leg6.style.display = 'contents';
 }
 }
 
-var tilde = "Gracias por elegirnos. </br> ¡Nos contactaremos a la brevedad!"
+var tilde = "Detectamos un error. </br> Por favor revise su formulario."

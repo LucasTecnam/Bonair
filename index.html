@@ -41,7 +41,7 @@
     <section id="sobre-nosotros">
         <div class="img-container" data-aos="zoom-in-left" id="sn">
         <h2>Sobre <span class="color-acento">Nosotros</span></h2>
-        <p>BONAIR ES UNA EMPRESA DE AVIACION EJECUTIVA DISEÑADA PARA BRINDAR UN SERVICIO UNICO.</br>DISPONIBILIDAD CONTINUA, NO IMPORTA QUE DIA Y HORARIO NOS NECESITES. AHI ESTAREMOS!</br>NOS ENFOCAMOS EN CADA DETALLE PARA GARANTIZARLE SU MEJOR EXPERIENCIA</p>
+        <p>BONAIR ES UNA EMPRESA DE AVIACION EJECUTIVA DISEÑADA PARA BRINDAR UN SERVICIO ÚNICO.</br>DISPONIBILIDAD CONTINUA, NO IMPORTA QUE DIA Y HORARIO NOS NECESITES. AHI ESTAREMOS!</br>NOS ENFOCAMOS EN CADA DETALLE PARA GARANTIZARLE SU MEJOR EXPERIENCIA</p>
     </div>
     </section>
 
@@ -56,12 +56,12 @@
         </section>      
         
               
-        <form name="formulario-vuelo" netlify>
     <section id="planifica-tu-vuelo">        
-        <div class="tabs">
+        <div class="tabs">                
             <input type="radio" class="tabs__radio" name="tabs-example" id="tab1" checked>
             <label for="tab1" class="tabs__label">SOLO IDA</label>
             <div class="tabs__content">
+                <form name="formulario-solo-ida" netlify> 
                 <div class="elemento">
                     <label for="Origen">Origen</label>
                     <input type="texto" id="Origen" name="Origen" required="true"/>
@@ -104,13 +104,16 @@
                         </div></br>
                         <div class="elemento">
                             <h6 id="titulo"></h6>
-                            <input type="submit" id="boton" onclick="document.getElementById('titulo').innerHTML= tilde" value="ENVIAR"/>
+                            <input type="submit" id="boton"  value="ENVIAR"/>
                         </div>
-                        </div>                
-                </div>                       
+                        </div>     
+                    </form>           
+                </div>
+                                 
             <input type="radio" class="tabs__radio" name="tabs-example" id="tab2">
             <label for="tab2" class="tabs__label">IDA Y VUELTA</label>
-            <div class="tabs__content">
+            <div class="tabs__content">                
+                <form name="formulario-ida-y-vuelta" netlify> 
                 <div class="elemento">
                     <label for="Origen1">Origen</label>
                     <input type="texto" id="Origen1" name="Origen1" required="true" />
@@ -141,7 +144,8 @@
                           <div class="form-check form-check-inline">
                             <input class="form-check-input" name="genero" type="radio" id="inlineCheckbox1" value="option3">
                             <label class="form-check-label" for="inlineCheckbox1">3</label>
-                          </div>
+                          </div>     
+                        </div>                      
                           <div class="elemento">
                             <label for="usuario1">Nombre y Apellido</label>
                             <input type="usuario" id="usuario1" name="usuario1" required="true"/>
@@ -156,239 +160,242 @@
                         </div></br>
                         <div class="elemento">
                             <h6 id="titulo2"></h6>
-                            <button id="boton"  onclick="document.getElementById('titulo2').innerHTML= tilde">ENVIAR</button>
-                        </div>
-                        </div>                
+                            <input type="submit" id="boton" value="ENVIAR"/>
+                        </div>                                       
                 </div>
+                </form>
              </div>
-            <input type="radio" class="tabs__radio" name="tabs-example" id="tab3">
-            <label for="tab3" class="tabs__label">MULTI LEG</label>
-            <div class="tabs__content">                                  
-                                    <div class="cf-container">
-                                    <div style="width:100%;">
-                                    <h6 class="tituloFormularioChico">LEG 1</h6>
-                                    </div>
-                                    <div class="elemento">
-                                        <label for="Origen2">Origen</label>
-                                        <input type="texto" id="Origen2" name="Origen2" required="true" />
-                                    </div>
-                                    <div class="elemento">
-                                        <label for="Destino2">Destino</label>
-                                        <input type="texto" id="Destino2" name="Destino2" required="true" />
-                                    </div>
-                                    <div class="elemento">
-                                        <label for="tiempoespera2">Tiempo de espera en destino</label>
-                                        <input type="time" id="tiempoespera2" name="tiempoespera2" required="true" />
-                                    </div>
-                                    <div class="elemento">
-                                        <label for="calendario2">Dia y horario</label>
-                                        <input type="datetime-local" id="calendario2" name="calendario2" required="true" />
-                                    </div>                        
-                                    <div class="elemento">
-                                        <label for="Paxs">Cantidad de pasajeros</label>
-                                        <div class="elemento">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" name="genero" type="radio" id="inlineCheckbox1" value="option1">
-                                                <label class="form-check-label" for="inlineCheckbox1">1</label>
-                                              </div>
-                                              <div class="form-check form-check-inline">
-                                                <input class="form-check-input" name="genero" type="radio" id="inlineCheckbox1" value="option2">
-                                                <label class="form-check-label" for="inlineCheckbox1">2</label>
-                                              </div>
-                                              <div class="form-check form-check-inline">
-                                                <input class="form-check-input" name="genero" type="radio" id="inlineCheckbox1" value="option3">
-                                                <label class="form-check-label" for="inlineCheckbox1">3</label>
-                                              </div>
-                                              </div>
-                                              </div>   
-                                            </br>                                 
-                                    <h6 class="tituloFormularioChico">LEG 2</h6>
-                                    <div class="elemento">
-                                        <label for="Origen3">Origen</label>
-                                        <input type="texto" id="Origen3" name="Origen3" required="true" />
-                                    </div>
-                                    <div class="elemento">
-                                        <label for="Destino3">Destino</label>
-                                        <input type="texto" id="Destino3" name="Destino3" required="true" />
-                                    </div>
-                                    <div class="elemento">
-                                        <label for="tiempoespera3">Tiempo de espera en destino</label>
-                                        <input type="time" id="tiempoespera3" name="tiempoespera3" required="true" />
-                                    </div>
-                                    <div class="elemento">
-                                        <label for="calendario3">Dia y horario</label>
-                                        <input type="datetime-local" id="calendario3" name="calendario3" required="true" />
-                                    </div>                        
-                                    <div class="elemento">
-                                        <label for="Paxs">Cantidad de pasajeros</label>
-                                        <div class="elemento">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" name="genero" type="radio" id="inlineCheckbox1" value="option1">
-                                                <label class="form-check-label" for="inlineCheckbox1">1</label>
-                                              </div>
-                                              <div class="form-check form-check-inline">
-                                                <input class="form-check-input" name="genero" type="radio" id="inlineCheckbox1" value="option2">
-                                                <label class="form-check-label" for="inlineCheckbox1">2</label>
-                                              </div>
-                                              <div class="form-check form-check-inline">
-                                                <input class="form-check-input" name="genero" type="radio" id="inlineCheckbox1" value="option3">
-                                                <label class="form-check-label" for="inlineCheckbox1">3</label>
-                                              </div>
-                                              </div>
-                                              </div>
-                                            </br>  
-                                    <h6 class="tituloFormularioChico">LEG 3</h6>
-                                    <div class="elemento">
-                                        <label for="Origen4">Origen</label>
-                                        <input type="texto" id="Origen4" name="Origen4" required="true" />
-                                    </div>
-                                    <div class="elemento">
-                                        <label for="Destino4">Destino</label>
-                                        <input type="texto" id="Destino4" name="Destino4" required="true" />
-                                    </div>
-                                    <div class="elemento">
-                                        <label for="tiempoespera4">Tiempo de espera en destino</label>
-                                        <input type="time" id="tiempoespera4" name="tiempoespera4" required="true" />
-                                    </div>
-                                    <div class="elemento">
-                                        <label for="calendario4">Dia y horario</label>
-                                        <input type="datetime-local" id="calendario4" name="calendario4" required="true" />
-                                    </div>                        
-                                    <div class="elemento">
-                                        <label for="Paxs">Cantidad de pasajeros</label>
-                                        <div class="elemento">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" name="genero" type="radio" id="inlineCheckbox1" value="option1">
-                                                <label class="form-check-label" for="inlineCheckbox1">1</label>
-                                              </div>
-                                              <div class="form-check form-check-inline">
-                                                <input class="form-check-input" name="genero" type="radio" id="inlineCheckbox1" value="option2">
-                                                <label class="form-check-label" for="inlineCheckbox1">2</label>
-                                              </div>
-                                              <div class="form-check form-check-inline">
-                                                <input class="form-check-input" name="genero" type="radio" id="inlineCheckbox1" value="option3">
-                                                <label class="form-check-label" for="inlineCheckbox1">3</label>
-                                              </div>
-                                            </br>  
-                                    <div id="leg4" style="display: none; width:100%;">
-                                    </br>  
-                                    <h6 class="tituloFormularioChico">LEG 4</h6>
-                                    <div class="elemento">
-                                        <label for="Origen5">Origen</label>
-                                        <input type="texto" id="Origen5" name="Origen5" required="true" />
-                                    </div>    
-                                    <div class="elemento">
-                                        <label for="Destino5">Destino</label>
-                                        <input type="texto" id="Destino5" name="Destino5" required="true" />
-                                    </div>             
-                                    <div class="elemento">
-                                        <label for="tiempoespera5">Tiempo de espera en destino</label>
-                                        <input type="time" id="tiempoespera5" name="tiempoespera5" required="true" />
-                                    </div>
-                                    <div class="elemento">
-                                        <label for="calendario5">Dia y horario</label>
-                                        <input type="datetime-local" id="calendario5" name="calendario5" required="true" />
-                                    </div>     
-                                    <div class="elemento">
-                                        <label for="Paxs">Cantidad de pasajeros</label>
-                                        <div class="elemento">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" name="genero" type="radio" id="inlineCheckbox1" value="option1">
-                                                <label class="form-check-label" for="inlineCheckbox1">1</label>
-                                              </div>
-                                              <div class="form-check form-check-inline">
-                                                <input class="form-check-input" name="genero" type="radio" id="inlineCheckbox1" value="option2">
-                                                <label class="form-check-label" for="inlineCheckbox1">2</label>
-                                              </div>
-                                              <div class="form-check form-check-inline">
-                                                <input class="form-check-input" name="genero" type="radio" id="inlineCheckbox1" value="option3">
-                                                <label class="form-check-label" for="inlineCheckbox1">3</label>
-                                              </div>
-                                    </div>
-                                    </div>
-                                    </div>
-                                </br>  
-                                    <div id="leg5" style="display:none; width:100%;">
-                                    <div style="width:100%;">
-                                    <h6 class="tituloFormularioChico">LEG 5</h6>
-                                    <div class="elemento">
-                                        <label for="Origen6">Origen</label>
-                                        <input type="texto" id="Origen6" name="Origen6" required="true" />
-                                    </div>    
-                                    <div class="elemento">
-                                        <label for="Destino6">Destino</label>
-                                        <input type="texto" id="Destino6" name="Destino6" required="true" />
-                                    </div>             
-                                    <div class="elemento">
-                                        <label for="tiempoespera6">Tiempo de espera en destino</label>
-                                        <input type="time" id="tiempoespera6" name="tiempoespera6" required="true" />
-                                    </div>
-                                    <div class="elemento">
-                                        <label for="calendario6">Dia y horario</label>
-                                        <input type="datetime-local" id="calendario6" name="calendario6" required="true" />
-                                    </div>     
-                                    <div class="elemento">
-                                        <label for="Paxs">Cantidad de pasajeros</label>
-                                        <div class="elemento">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" name="genero" type="radio" id="inlineCheckbox1" value="option1">
-                                                <label class="form-check-label" for="inlineCheckbox1">1</label>
-                                              </div>
-                                              <div class="form-check form-check-inline">
-                                                <input class="form-check-input" name="genero" type="radio" id="inlineCheckbox1" value="option2">
-                                                <label class="form-check-label" for="inlineCheckbox1">2</label>
-                                              </div>
-                                              <div class="form-check form-check-inline">
-                                                <input class="form-check-input" name="genero" type="radio" id="inlineCheckbox1" value="option3">
-                                                <label class="form-check-label" for="inlineCheckbox1">3</label>
-                                              </div>
-                                    </div>
-                                    </div>
-                                    </div>                                    
-                                    </div>
-                                </br>  
-                                    <div id="leg6" style="display: none; width:100%;">
-                                    <div style="width:100%;">
-                                    <h6 class="tituloFormularioChico">LEG 6</h6>
-                                    </div>
-                                    <div class="elemento">
-                                        <label for="Origen7">Origen</label>
-                                        <input type="texto" id="Origen7" name="Origen7" required="true" />
-                                    </div>    
-                                    <div class="elemento">
-                                        <label for="Destino7">Destino</label>
-                                        <input type="texto" id="Destino7" name="Destino7" required="true" />
-                                    </div>             
-                                    <div class="elemento">
-                                        <label for="tiempoespera7">Tiempo de espera en destino</label>
-                                        <input type="time" id="tiempoespera7" name="tiempoespera7" required="true" />
-                                    </div>
-                                    <div class="elemento">
-                                        <label for="calendario7">Dia y horario</label>
-                                        <input type="datetime-local" id="calendario7" name="calendario7" required="true" />
-                                    </div>     
-                                    <div class="elemento">
-                                        <label for="Paxs">Cantidad de pasajeros</label>
-                                        <div class="elemento">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" name="genero" type="radio" id="inlineCheckbox1" value="option1">
-                                                <label class="form-check-label" for="inlineCheckbox1">1</label>
-                                              </div>
-                                              <div class="form-check form-check-inline">
-                                                <input class="form-check-input" name="genero" type="radio" id="inlineCheckbox1" value="option2">
-                                                <label class="form-check-label" for="inlineCheckbox1">2</label>
-                                              </div>
-                                              <div class="form-check form-check-inline">
-                                                <input class="form-check-input" name="genero" type="radio" id="inlineCheckbox1" value="option3">
-                                                <label class="form-check-label" for="inlineCheckbox1">3</label>
-                                              </div>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    <div style="width:100%;"><input id="boton" class="agregarVuelo" type="button" name="answer" value="AGREGAR PIERNA" onclick="showDiv()"></div>                                    
-                                    </div>
-                                    <div class="wpcf7-response-output" aria-hidden="true"></div></div>
-                                </div>
+             <input type="radio" class="tabs__radio" name="tabs-example" id="tab3">
+             <label for="tab3" class="tabs__label">MULTI LEG</label>
+             <div class="tabs__content">              
+                <form name="formulario-multileg" netlify>                     
+                                     <div class="cf-container">
+                                     <div style="width:100%;">
+                                     <h6>LEG 1</h6>
+                                     </div>
+                                     <div class="elemento">
+                                         <label for="Origen2">Origen</label>
+                                         <input type="texto" id="Origen2" name="Origen2" required="true" />
+                                     </div>
+                                     <div class="elemento">
+                                         <label for="Destino2">Destino</label>
+                                         <input type="texto" id="Destino2" name="Destino2" required="true" />
+                                     </div>
+                                     <div class="elemento">
+                                         <label for="tiempoespera2">Tiempo de espera en destino</label>
+                                         <input type="time" id="tiempoespera2" name="tiempoespera2" required="true" />
+                                     </div>
+                                     <div class="elemento">
+                                         <label for="calendario2">Dia y horario</label>
+                                         <input type="datetime-local" id="calendario2" name="calendario2" required="true" />
+                                     </div>                        
+                                     <div class="elemento">
+                                         <label for="Paxs">Cantidad de pasajeros</label>
+                                         <div class="elemento">
+                                             <div class="form-check form-check-inline">
+                                                 <input class="form-check-input" name="genero" type="radio" id="inlineCheckbox1" value="option1">
+                                                 <label class="form-check-label" for="inlineCheckbox1">1</label>
+                                               </div>
+                                               <div class="form-check form-check-inline">
+                                                 <input class="form-check-input" name="genero" type="radio" id="inlineCheckbox1" value="option2">
+                                                 <label class="form-check-label" for="inlineCheckbox1">2</label>
+                                               </div>
+                                               <div class="form-check form-check-inline">
+                                                 <input class="form-check-input" name="genero" type="radio" id="inlineCheckbox1" value="option3">
+                                                 <label class="form-check-label" for="inlineCheckbox1">3</label>
+                                               </div>
+                                               </div>
+                                               </div>   
+                                             </br>                                 
+                                     <h6>LEG 2</h6>
+                                     <div class="elemento">
+                                         <label for="Origen3">Origen</label>
+                                         <input type="texto" id="Origen3" name="Origen3" required="true" />
+                                     </div>
+                                     <div class="elemento">
+                                         <label for="Destino3">Destino</label>
+                                         <input type="texto" id="Destino3" name="Destino3" required="true" />
+                                     </div>
+                                     <div class="elemento">
+                                         <label for="tiempoespera3">Tiempo de espera en destino</label>
+                                         <input type="time" id="tiempoespera3" name="tiempoespera3" required="true" />
+                                     </div>
+                                     <div class="elemento">
+                                         <label for="calendario3">Dia y horario</label>
+                                         <input type="datetime-local" id="calendario3" name="calendario3" required="true" />
+                                     </div>                        
+                                     <div class="elemento">
+                                         <label for="Paxs">Cantidad de pasajeros</label>
+                                         <div class="elemento">
+                                             <div class="form-check form-check-inline">
+                                                 <input class="form-check-input" name="genero2" type="radio" id="inlineCheckbox2" value="option1">
+                                                 <label class="form-check-label" for="inlineCheckbox2">1</label>
+                                               </div>
+                                               <div class="form-check form-check-inline">
+                                                 <input class="form-check-input" name="genero2" type="radio" id="inlineCheckbox2" value="option2">
+                                                 <label class="form-check-label" for="inlineCheckbox2">2</label>
+                                               </div>
+                                               <div class="form-check form-check-inline">
+                                                 <input class="form-check-input" name="genero2" type="radio" id="inlineCheckbox2" value="option3">
+                                                 <label class="form-check-label" for="inlineCheckbox2">3</label>
+                                               </div>
+                                               </div>
+                                               </div>
+                                             </br>  
+                                     <h6 class="tituloFormularioChico">LEG 3</h6>
+                                     <div class="elemento">
+                                         <label for="Origen4">Origen</label>
+                                         <input type="texto" id="Origen4" name="Origen4" required="true" />
+                                     </div>
+                                     <div class="elemento">
+                                         <label for="Destino4">Destino</label>
+                                         <input type="texto" id="Destino4" name="Destino4" required="true" />
+                                     </div>
+                                     <div class="elemento">
+                                         <label for="tiempoespera4">Tiempo de espera en destino</label>
+                                         <input type="time" id="tiempoespera4" name="tiempoespera4" required="true" />
+                                     </div>
+                                     <div class="elemento">
+                                         <label for="calendario4">Dia y horario</label>
+                                         <input type="datetime-local" id="calendario4" name="calendario4" required="true" />
+                                     </div>                        
+                                     <div class="elemento">
+                                         <label for="Paxs">Cantidad de pasajeros</label>
+                                         <div class="elemento">
+                                             <div class="form-check form-check-inline">
+                                                 <input class="form-check-input" name="genero3" type="radio" id="inlineCheckbox1" value="option1">
+                                                 <label class="form-check-label" for="inlineCheckbox1">1</label>
+                                               </div>
+                                               <div class="form-check form-check-inline">
+                                                 <input class="form-check-input" name="genero3" type="radio" id="inlineCheckbox1" value="option2">
+                                                 <label class="form-check-label" for="inlineCheckbox1">2</label>
+                                               </div>
+                                               <div class="form-check form-check-inline">
+                                                 <input class="form-check-input" name="genero3" type="radio" id="inlineCheckbox1" value="option3">
+                                                 <label class="form-check-label" for="inlineCheckbox1">3</label>
+                                               </div>
+                                            </div>
+                                            </div>
+                                             </br>  
+                                     <div id="leg4" style="display: none; width:100%;">
+                                     <div style="width:100%;">
+                                        <h6>LEG 4</h6>
+                                       </div> 
+                                     <div class="elemento">
+                                         <label for="Origen5">Origen</label>
+                                         <input type="texto" id="Origen5" name="Origen5"  />
+                                     </div>    
+                                     <div class="elemento">
+                                         <label for="Destino5">Destino</label>
+                                         <input type="texto" id="Destino5" name="Destino5"  />
+                                     </div>             
+                                     <div class="elemento">
+                                         <label for="tiempoespera5">Tiempo de espera en destino</label>
+                                         <input type="time" id="tiempoespera5" name="tiempoespera5"  />
+                                     </div>
+                                     <div class="elemento">
+                                         <label for="calendario5">Dia y horario</label>
+                                         <input type="datetime-local" id="calendario5" name="calendario5" />
+                                     </div>     
+                                     <div class="elemento">
+                                         <label for="Paxs">Cantidad de pasajeros</label>
+                                         <div class="elemento">
+                                             <div class="form-check form-check-inline">
+                                                 <input class="form-check-input" name="genero4" type="radio" id="inlineCheckbox1" value="option1">
+                                                 <label class="form-check-label" for="inlineCheckbox1">1</label>
+                                               </div>
+                                               <div class="form-check form-check-inline">
+                                                 <input class="form-check-input" name="genero4" type="radio" id="inlineCheckbox1" value="option2">
+                                                 <label class="form-check-label" for="inlineCheckbox1">2</label>
+                                               </div>
+                                               <div class="form-check form-check-inline">
+                                                 <input class="form-check-input" name="genero4" type="radio" id="inlineCheckbox1" value="option3">
+                                                 <label class="form-check-label" for="inlineCheckbox1">3</label>
+                                               </div>
+                                     </div>
+                                     </div>
+                                     </div>
+                                 </br>  
+                                     <div id="leg5" style="display:none; width:100%;">
+                                     <div style="width:100%;">
+                                     <h6>LEG 5</h6>
+                                    </div> 
+                                     <div class="elemento">
+                                         <label for="Origen6">Origen</label>
+                                         <input type="texto" id="Origen6" name="Origen6" />
+                                     </div>    
+                                     <div class="elemento">
+                                         <label for="Destino6">Destino</label>
+                                         <input type="texto" id="Destino6" name="Destino6"  />
+                                     </div>             
+                                     <div class="elemento">
+                                         <label for="tiempoespera6">Tiempo de espera en destino</label>
+                                         <input type="time" id="tiempoespera6" name="tiempoespera6"  />
+                                     </div>
+                                     <div class="elemento">
+                                         <label for="calendario6">Dia y horario</label>
+                                         <input type="datetime-local" id="calendario6" name="calendario6" />
+                                     </div>     
+                                     <div class="elemento">
+                                         <label for="Paxs">Cantidad de pasajeros</label>
+                                         <div class="elemento">
+                                             <div class="form-check form-check-inline">
+                                                 <input class="form-check-input" name="genero5" type="radio" id="inlineCheckbox1" value="option1">
+                                                 <label class="form-check-label" for="inlineCheckbox1">1</label>
+                                               </div>
+                                               <div class="form-check form-check-inline">
+                                                 <input class="form-check-input" name="genero5" type="radio" id="inlineCheckbox1" value="option2">
+                                                 <label class="form-check-label" for="inlineCheckbox1">2</label>
+                                               </div>
+                                               <div class="form-check form-check-inline">
+                                                 <input class="form-check-input" name="genero5" type="radio" id="inlineCheckbox1" value="option3">
+                                                 <label class="form-check-label" for="inlineCheckbox1">3</label>
+                                               </div>
+                                     </div>
+                                     </div>                                                                        
+                                     </div>
+                                 </br>  
+                                     <div id="leg6" style="display: none; width:100%;">
+                                     <div style="width:100%;">
+                                     <h6>LEG 6</h6>
+                                     </div>
+                                     <div class="elemento">
+                                         <label for="Origen7">Origen</label>
+                                         <input type="texto" id="Origen7" name="Origen7"  />
+                                     </div>    
+                                     <div class="elemento">
+                                         <label for="Destino7">Destino</label>
+                                         <input type="texto" id="Destino7" name="Destino7"  />
+                                     </div>             
+                                     <div class="elemento">
+                                         <label for="tiempoespera7">Tiempo de espera en destino</label>
+                                         <input type="time" id="tiempoespera7" name="tiempoespera7" />
+                                     </div>
+                                     <div class="elemento">
+                                         <label for="calendario7">Dia y horario</label>
+                                         <input type="datetime-local" id="calendario7" name="calendario7" />
+                                     </div>     
+                                     <div class="elemento">
+                                         <label for="Paxs">Cantidad de pasajeros</label>
+                                         <div class="elemento">
+                                             <div class="form-check form-check-inline">
+                                                 <input class="form-check-input" name="genero6" type="radio" id="inlineCheckbox1" value="option1">
+                                                 <label class="form-check-label" for="inlineCheckbox1">1</label>
+                                               </div>
+                                               <div class="form-check form-check-inline">
+                                                 <input class="form-check-input" name="genero6" type="radio" id="inlineCheckbox1" value="option2">
+                                                 <label class="form-check-label" for="inlineCheckbox1">2</label>
+                                               </div>
+                                               <div class="form-check form-check-inline">
+                                                 <input class="form-check-input" name="genero6" type="radio" id="inlineCheckbox1" value="option3">
+                                                 <label class="form-check-label" for="inlineCheckbox1">3</label>
+                                               </div>
+                                     </div>
+                                     </div>                                     
+                                     </div>
+                                    <div style="width:100%;"><input id="boton" class="agregarVuelo" type="button" name="answer" value="AGREGAR PIERNA" onclick="showDiv()">
+                                    </div>  
+                                  
                           <div class="elemento">
                             <label for="usuario2">Nombre y Apellido</label>
                             <input type="usuario" id="usuario2" name="usuario2" required="true"/>
@@ -404,11 +411,13 @@
                         <div class="elemento">
                             <h6 id="titulo3"></h6>
                             <button id="boton"  onclick="document.getElementById('titulo3').innerHTML= tilde">ENVIAR</button>
-                        </div>        
-                    </div>
-                    
+                        </div>    
+                    </div> 
+                    </form>   
+                    </div> 
+                </div>
+                </form>           
     </section>
-</form>
         
     <div id="button-up">
         <i class="fa-solid fa-circle-arrow-up"></i>
