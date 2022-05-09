@@ -283,7 +283,8 @@ h3{
     align-items: center;
     justify-content: center;
     text-align: center;
-    display: inline-block;
+    display: inline-block;    
+    cursor: pointer;
 }
 .tabs__label span {
 	transition: all 0.3s;
